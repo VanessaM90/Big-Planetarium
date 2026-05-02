@@ -1,0 +1,251 @@
+/* GENERAL STYLES */
+
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main body styling (dark space theme) */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  font-size: 18px;
+  background-color: #4b4b4b;
+  color: #f4f4f4;
+}
+
+/* HEADER */
+
+header {
+  background-color: #222222;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #4ea8ff;
+}
+
+header h1 {
+  margin-bottom: 15px;
+  font-size: 2.2rem;
+  color: #8fd3ff;
+}
+
+/* NAVIGATION  */
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+nav a:hover,
+nav a:focus,
+nav a[aria-current="page"] {
+  background-color: #4ea8ff;
+  color: #000000;
+  outline: 2px solid #ffffff;
+}
+
+/* MAIN CONTENT */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+section {
+  background-color: #3a3a3a;
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #8fd3ff;
+  font-size: 2rem;
+}
+
+p
+li {
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+}
+
+/* IMAGES */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+#galaxy {
+  max-width: 250px;
+}
+
+#planet-img {
+  max-width: 220px;
+}
+
+.rover-img {
+  max-width: 500px;
+}
+
+/*  OLYMPUS GALLERY  */
+
+.olympus {
+  text-align: center;
+}
+
+.olympus-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.olympus-item {
+  width: 260px;
+  text-align: center;
+}
+
+.olympus-item img {
+  width: 100%;
+  object-fit: contain;
+  background-color: #000;
+}
+
+/*
+   LISTS
+*/
+
+ul {
+  padding-left: 20px;
+}
+
+/*
+   LINK */
+
+a {
+  color: #8fd3ff;
+}
+
+a:hover,
+a:focus {
+  color: #ffffff;
+}
+
+/* MARS LINK (BOTÓN) */
+
+.mars-link {
+  display: inline-block;
+  background-color: #c1440e;
+  color: #000000; /*TEXT BLACK */
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mars-link:hover {
+  background-color: #e85d2a;
+  color: #000000; 
+}
+
+/* CONTACT LINKS */
+
+.contact a {
+  color: #ffb347;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* BUTTONS */
+
+button {
+  background-color: #c1440e;
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+button:hover,
+button:focus {
+  background-color: #e85d2a;
+  outline: 3px solid #ffffff;
+}
+
+/* AUDIO */
+
+audio {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 15px auto 0;
+}
+
+/* VIDEO */
+
+video {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 15px auto 0;
+  border-radius: 10px;
+}
+
+/* FOOTER*/
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222222;
+  border-top: 2px solid #4ea8ff;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  #galaxy {
+    max-width: 200px;
+  }
+
+  #planet-img {
+    max-width: 180px;
+  }
+
+  .olympus-item {
+    width: 100%;
+  }
+}

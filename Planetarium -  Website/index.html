@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Makes the website responsive on different devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Big Planetarium</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header section containing title and navigation -->
+  <header>
+    <h1>Big Planetarium</h1>
+
+    <!-- Main navigation menu -->
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="mars.html">Mars</a>
+      <a href="aboutus.html">About Us</a>
+    </nav>
+  </header>
+
+  <!-- Main content of the page -->
+  <main id="main-content">
+
+    <!-- Introduction section about the Milky Way -->
+    <section>
+      <h2>Welcome to the Milky Way</h2>
+      <p>
+        The Milky Way is the galaxy that contains our Solar System. It is a huge collection
+        of stars, planets, dust, and gas held together by gravity.
+      </p>
+      <p>
+        Our planet, Earth, is only a tiny part of this enormous galaxy. By exploring space,
+        we can learn more about where we came from and what exists beyond our world.
+      </p>
+
+      <!-- Image of the Milky Way with alt text for accessibility -->
+      <img id="galaxy"
+        src="photos/milky-way.jpg"
+        alt="A detailed image of the Milky Way galaxy showing bright stars and cosmic dust in the night sky">
+    </section>
+
+    <!-- Section explaining what the Milky Way is -->
+    <section>
+      <h2>What is the Milky Way?</h2>
+      <p>
+        The Milky Way is a spiral galaxy. That means it has a bright centre and long arms
+        that stretch outwards. Billions of stars are found inside it, including our Sun.
+      </p>
+    </section>
+
+    <!-- Section linking to Mars page -->
+    <section>
+      <h2>Explore a Planet</h2>
+      <p>
+        Curious about Mars? Visit our page to discover fascinating facts, images, and information about the Red Planet.
+      </p>
+
+      <!-- Call-to-action button styled link -->
+      <p><a href="mars.html" class="mars-link">Learn About Mars</a></p>
+    </section>
+
+    <!-- Video section with subtitles -->
+    <section>
+      <h2>Watch and Learn</h2>
+      <p>This video provides a simple introduction to the Milky Way and space exploration.</p>
+
+      <div>
+        <h3>All about the Milky Way</h3>
+
+        <!-- Video with controls and captions -->
+        <video controls width="320">
+          <source src="video/videoplayback.mp4" type="video/mp4">
+
+          <!-- Subtitles track for accessibility -->
+          <track src="video/captions.vtt" kind="subtitles" srclang="en" label="English">
+        </video>
+      </div>
+
+      <p>
+        This video explains the Milky Way using simple visuals and narration,
+        making it easier for users to understand basic space concepts.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2026 Big Planetarium. Inspiring curiosity about space.</p>
+  </footer>
+
+  <!-- Link to JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
